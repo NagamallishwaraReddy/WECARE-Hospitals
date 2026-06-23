@@ -1,20 +1,52 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# WeCare Hospitals
 
-# Run and deploy your AI Studio app
+A modern, clean hospital website built with React, Tailwind CSS, and Firebase. It features patient authentication, departmental listings, doctor profiles, and a real-time appointment booking system.
 
-This contains everything you need to run your app locally.
+## 🌐 Live Demo
+[View Live Demo Here](https://6a3a115740c03cf57bff36b7--splendorous-halva-0aca0f.netlify.app/)
 
-View your app in AI Studio: https://ai.studio/apps/bb472a21-fea9-4d7d-803a-db60a110e623
+## ✨ Features
+- **User Authentication**: Secure user registration, login, and password reset functionality using Firebase Auth.
+- **Appointment Booking**: Authenticated users can book appointments with specific doctors or broadly by department.
+- **Patient Dashboard**: Users can view their appointment history and status securely.
+- **Department & Doctor Directories**: Browse hospital specialties, facility details, and individual doctor profiles.
+- **Responsive Design**: fully responsive UI for seamless experience across mobile, tablet, and desktop viewing.
 
-## Run Locally
+## 🛠️ Tech Stack
+- **Frontend**: React, TypeScript, Vite
+- **Styling**: Tailwind CSS 4
+- **Animations**: Motion (Framer Motion)
+- **Icons**: Lucide React
+- **Backend/Database**: Firebase (Authentication & Firestore Cloud Database)
 
-**Prerequisites:**  Node.js
+## 🚀 Getting Started
 
+### Prerequisites
+- Node.js (v18 or higher)
+- npm or yarn
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/wecare-hospitals.git
+   cd wecare-hospitals
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Setup Firebase:
+   - Create a new Firebase project at [Firebase Console](https://console.firebase.google.com/).
+   - Enable **Authentication** (Email/Password).
+   - Enable **Firestore Database**.
+   - Update the `src/firebase.ts` file with your own Firebase configuration object.
+
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+## 📄 License
+This project is open-source and available under the [MIT License](LICENSE).
